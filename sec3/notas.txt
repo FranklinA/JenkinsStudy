@@ -1,0 +1,16 @@
+vagrant@ubuntu-bionic:/vagrant$ cd maquinaCentos7/
+vagrant@ubuntu-bionic:/vagrant/maquinaCentos7$ ls
+Dockerfile  remote-key  remote-key.pub
+vagrant@ubuntu-bionic:/vagrant/maquinaCentos7$ docker cp remote-key jenkins:/tmp
+vagrant@ubuntu-bionic:/vagrant/maquinaCentos7$ docker exec -ti jenkins bash
+jenkins@96e9a56aa16d:/$ cd /tmp/
+jenkins@96e9a56aa16d:/tmp$ ls
+hsperfdata_jenkins  hsperfdata_root  jetty-0.0.0.0-8080-war-_-any-2345273004222522825.dir  remote-key  winstone7443935673020331449.jar
+jenkins@96e9a56aa16d:/tmp$ ssh -i remote-key remote_user@remote_host
+Last login: Thu Sep 26 02:02:22 2019 from jenkins.vagrant_net
+[remote_user@a9541a4c15de ~]$ exit
+logout
+Connection to remote_host closed.
+jenkins@96e9a56aa16d:/tmp$ exit
+exit
+
