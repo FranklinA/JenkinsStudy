@@ -1,0 +1,15 @@
+Started by user [8mha:////4KTSJ2z9pLOSFVlPvARsnEiMBMr/H86h3L/k2Fpf66OKAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9xJTczDwA+rnvwMAAAAA=[0madmin admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/remote-task
+[SSH] script:
+
+$NAME=Franklin
+echo "Hola mi nombre es $NAME. La hora es $(date)" > /tmp/test
+
+[SSH] executing...
+bash: line 1: =Franklin: command not found
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS
